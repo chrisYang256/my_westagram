@@ -4,7 +4,7 @@ from django.http            import JsonResponse
 from django.views           import View
 # from django.core.exceptions import ValidationError
 
-from users.models                 import User
+from users.models           import User
 
 # # 회원가입 시에만 쓸것이기 때문에 별도의 파일로 만들지 않음.
 # def validation_email(email):
