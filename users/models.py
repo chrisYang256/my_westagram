@@ -7,9 +7,8 @@ class User(models.Model):
     user_email       = models.EmailField(max_length=50, unique=True)
     user_password    = models.CharField(max_length=50)
     # pip install django-phonenumber-field[phonenumberslite] 설치오류로 우선 CF씀.
-    # 차후 validator라는 유효성 검사 함수에 대해 더 알아보자.
     user_phone_num   = models.CharField(max_length=30, unique=True)
-    user_other_info  = models.TextField(max_length=300, null=True)
+    user_hobby  = models.TextField(max_length=50, null=True)
 
     # Meta options: https://docs.djangoproject.com/ko/3.2/topics/db/models/#meta-options
     class Meta:

@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'users',
     # 'django.contrib.admin',
     # 'django.contrib.auth',
     'corsheaders',
@@ -56,6 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# 여기서 루트경로 확인 가능
 ROOT_URLCONF = 'westagram.urls'
 
 TEMPLATES = [
